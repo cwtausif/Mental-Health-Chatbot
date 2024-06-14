@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1210226489/photo/puzzle-jigsaw-heart-on-brain-mental-health-concept-world-autism-awareness-day.jpg?s=612x612&w=0&k=20&c=pTETk-bs2xos7IOHj0XKpT02mig8ZNSpmhHIh5erO88=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9); /* Added slight transparency for better visibility */
+}
+
+.card-header {
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    scroll-behavior: smooth;  /* This ensures smooth scrolling */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.chat-box p {
+    margin: 0 0 10px;
+}
+
+.chat-box p strong {
+    color: #007bff;
+}
+
+.chat-box p em {
+    color: #aaa;
+    font-style: italic;
+}
+
+.chat-box ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px 0 0;
+}
+
+.chat-box ul li {
+    margin: 5px 0;
+    cursor: pointer;  /* Makes the suggestion look clickable */
+    color: #007bff;   /* Makes the suggestion text blue */
+}
+
+.chat-box ul li:hover {
+    text-decoration: underline;  /* Adds underline on hover to indicate it's clickable */
+}
+
+.input-group .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.input-group-append .btn {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    border-left: none;
+}
